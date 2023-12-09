@@ -1,0 +1,245 @@
+body{
+    font-family:'Bricolage Grotesque', sans-serif;
+    text-align: center;  
+}
+
+.booking-page{
+    background-image: url(./pexels-lisa-fotios-2043035.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.book img{
+    width: 150px;
+    height: 50px;
+}
+
+h1{
+    text-align: center;
+}
+
+/* Booking Page */
+
+label{
+    margin-right: 3em;
+    width:7em;
+    display:inline-block;
+}
+
+input[type="number"],
+select {
+    width: 80%;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+fieldset{
+    width: 70%;
+    border-radius: 12px;
+    margin-left: 15%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    background-color: #f4f4df;
+}
+
+form{
+    border: 1px solid black;
+    margin-top: 5%;
+    border-radius: 10px;
+    background-color: rgb(231, 238, 241);
+}
+
+input[type="checkbox"] {
+    margin: 10px;
+}
+
+input[type="text"] {
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 12pt;
+}
+
+button {
+    background-color: #073347;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover{
+    background-color: gray;
+    color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont{
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-basis: 40%;
+}
+
+.info{
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 12px;
+    margin: 25px;
+}
+
+table{
+    border-collapse: collapse;
+    margin-top: 5%;
+    width: 100%;
+    background-color: #4584a1;
+}
+  
+th, td{
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover{
+    background-color: #194255;
+    color: #fff;
+}
+
+img{
+    height: 200px;
+    width: 250px;
+}
+
+.rooms{
+    display: flex;
+}
+
+.required-label::after{
+    content: ' *';
+    color: red;
+}
+
+/*responsiveness*/
+@media screen and (max-width: 768px) {
+    body{
+        font-size: 14px;
+    }
+
+    nav img{
+        width: 200px;
+        height: 80px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    label{
+        margin-right: 0;
+        width: auto;
+        display: block;
+    }
+
+    input[type="number"],
+    select,
+    input[type="text"] {
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    .cont{
+        width: 95%;
+    }
+
+    fieldset{
+        width: 80%;
+        margin-left: 5%;
+    }
+
+    .rooms{
+        flex-direction: column;
+    }
+
+    img{
+        width: 80%;
+        height: auto;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .cont{
+        margin: 5%;
+        flex-basis: 90%;
+    }
+
+    table{
+        margin-top: 2%;
+    }
+
+    button{
+        margin: 5px;
+    }
+}
+
+footer .contain{
+    background-color: rgb(205, 217, 228);
+    margin-top: 10%;
+}
+
+.footer-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+.footer-col img{
+    width: 35%;
+    height: 20%;
+    margin-bottom: 5%;
+}
+
+.footer-col h2{
+    margin-bottom: 25px;
+    font-size: 30px;
+    position: relative;
+}
+
+
+.footer-col input{
+    border: none;
+    width: 250px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin: 14px 0;
+}
+
+.footer-col .inputSubmit{
+    padding: 0px 20px;
+    margin-left: 10px;
+    background-color: darkgray;
+    color: white;
+    border: none;
+}
+
+.footer-col .inputSubmit:hover{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 700px){
+    footer .footer-row{
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+
+    .footer-col input{
+        width: 100%;
+    }
+}

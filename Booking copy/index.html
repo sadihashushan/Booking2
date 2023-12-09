@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,500&family=Lobster+Two&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+    <title>Document</title>
+</head>
+<body class="booking-page">
+    <header>
+        <section aria-label="Logo" class="book">
+                <a href="booking.html"><img src="./logo.png" alt="logo"></a>
+        </section>
+    </header>
+
+    <!-- Form -->
+    <!-- room choice and number of rooms -->
+    <form>
+        <h1>ROOM RESERVATIONS</h1>
+    <fieldset>
+        <legend class="required-label">Rooms</legend>
+        <p class="rooms">
+        <section aria-label="Single Room" class="rooms">
+            <section aria-label="Rooms">
+            <img src="./hikroom1.jpg" alt="Single Room">
+            </section>
+
+            <section aria-label="Single Room">
+            <label for="num1">Single Rooms</label>
+            <p>Our standard Citrus rooms are far from 'basic'. The superior rooms offer a king sized bed and private balcony with an incredible sea view and many amenities to make your stay a delightful one. Each room provides stylish, contemporary accommodation, making it the ideal place for a fun vacation when looking for hotels near Kalutara beaches.</p>
+
+            <input type="number" name="num1" id="num1" min="0" value="0" class="room-input" required>
+            </section>
+        </section>
+
+        <p class="rooms">
+        <section aria-label="Double Room" class="rooms">
+            <section aria-label="Rooms">
+            <img src="./hikroom2.jpg" alt="Double Room">
+            </section>
+
+            <section aria-label="Double Room">
+            <label for="num2">Double Rooms</label>
+            <p>Experience the next level of luxury at one of the best Kalutara beach hotels with our deluxe rooms. Including all the amenities featured in our superior room, deluxe rooms also come with a Jacuzzi bathtub for a truly indulgent vacation.</p>
+
+            <input type="number" name="num2" id="num2" min="0" value="0" class="room-input" required>
+            </section>
+        </section>
+
+        <p class="rooms">
+        <section aria-label="Triple Room" class="rooms">
+            <section aria-label="Rooms">
+            <img src="./hikroom3.jpg" alt="Triple Room">
+            </section>
+
+            <section aria-label="Triple Room">
+            <label for="num3">Triple Rooms</label>
+            <p>As the name implies, our presidential suite is the ultimate in luxury and our Waskaduwa hotel’s most lavish room. Choose this suite for the perfect mix of luxury and residential-style features, such as a kitchenette, bar counter, dining room and lounge area, replete with all the amenities one could need for a truly pampered stay.</p>
+
+            <input type="number" name="num3" id="num3" min="0" value="0" class="room-input" required>
+            </section>
+        </section>
+    </fieldset>
+
+    <!-- Number of People -->
+<fieldset>
+    <legend>Number of People</legend>
+    <p class="people">
+        <label for="adults" class="required-label">Adults:</label>
+        <input type="number" name="people" id="adults" min="1" value="1" required>
+    </p>
+
+    <p class="people">
+        <label for="children" class="required-label">Children:</label>
+        <input type="number" name="people" id="children" min="0" value="0" required>
+    </p>
+</fieldset>
+
+    <!-- duration -->
+    <fieldset>
+        <legend>Duration</legend>
+        <p class="duration">
+            <label for="check-in" class="required-label">Check-in Date:</label>
+            <input type="date" name="duration" id="check-in">
+        </p>
+
+        <p class="duration">
+            <label for="check-out" class="required-label">Check-out Date:</label>
+            <input type="date" name="duration" id="check-out">
+        </p>
+    </fieldset>
+
+    <!-- extra requirements -->
+    <fieldset>
+        <legend>Extra Requirements</legend>
+        <p>
+            <label><input type="checkbox" id="wifi">Wi-Fi</label>
+            <label><input type="checkbox" id="pool-view">Pool View</label>
+            <label><input type="checkbox" id="garden-view">Garden View</label>
+            <label><input type="checkbox" id="extra-bed">Extra Bed</label>
+
+        </p>
+    </fieldset>
+
+    <!-- promo-code -->
+    <fieldset>
+        <legend>Promo Code</legend>
+        <p>
+            <input type="text" id="promo-code" placeholder="Enter your Promo Code">
+        </p>
+    </fieldset>
+    </form>
+
+    <!-- adventure booking form -->
+<section aria-label="Diving Form" class="container">
+    <section class="cont">
+            <form>
+            <h2>DIVING RESERVATIONS</h2>
+    
+            <!-- local/foreign -->
+            <fieldset>
+                <legend>Local/Foreign</legend>
+                <p>
+                    <label for="person">Local/Foreign</label>
+                    <select name="person" id="person" class="adventure-input">
+                    <option value="foreign">Foreign</option>
+                    <option value="local">Local</option>
+                    </select>
+                </p>
+            </fieldset>
+    
+            <!-- adult and children -->
+            <fieldset>
+                <legend>Adults/Children</legend>
+                <p class="people">
+                    <label for="adults">Adults:</label>
+                    <input type="number" name="adults" id="adventureAdults" min="1" value="1" required class="adventure-input">
+                </p>
+    
+                <p class="people">
+                    <label for="children">Children:</label>
+                    <input type="number" name="children" id="adventureChildren" min="0" value="1" required class="adventure-input">
+                </p>
+            </fieldset>
+    
+            <!-- guide -->
+            <fieldset>
+                <legend>Guide for sectioning</legend>
+                    <section aria-label="Yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="yes" name="guide" value="yes">
+                    </section>
+                    <section aria-label="No">
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="guide" value="no"> 
+                    </section>
+            </fieldset>
+            </form>
+        </section>
+    
+    <!-- contact form -->
+    <section class="cont">
+    <form class="contact-form">
+        <h2>CONTACT INFORMATION</h2>
+        <!-- First Name -->
+        <section aria-label="Information" class="info">
+            <label for="firstname" class="required-label">First Name:</label>
+            <input type="text" name="name" id="firstname" placeholder="Enter your name" required>
+        </section>
+
+        <!-- Last Name -->
+        <section aria-label="Information" class="info">
+            <label for="lastname" class="required-label">Last Name:</label>
+            <input type="text" name="name" id="lastname" placeholder="Enter your name" required>
+        </section>
+
+        <!-- Email -->
+        <section aria-label="Information" class="info">
+            <label for="email" class="required-label">Email:</label>
+            <input type="text" name="email" id="email" placeholder="Enter your email" required>
+        </section>
+
+        <!-- Confirm Email -->
+        <section aria-label="Information" class="info">
+            <label for="email" class="required-label">Confirm Email:</label>
+            <input type="text" name="email" id="confirmemail" placeholder="Confirm your email" required>
+        </section>
+
+        <!-- Phone Number -->
+        <section aria-label="Information" class="info">
+            <label for="phone" class="required-label">Phone Number:</label>
+            <input type="text" name="phone" id="phone" placeholder="Enter your phone number" required>
+        </section>
+    </form>
+    </section>
+</section>
+
+    <!-- current booking -->
+        <section id="costs">
+            <h2>Current Booking</h2>
+            <!-- Room table -->
+            <table id="room-table">
+            </table>
+            
+            <!-- Adventure Table -->
+            <table id="adventure-table">
+            </table>            
+        </section>
+        <section aria-label="Loyalty Points" id="loyalty-points-section">
+            <h2>Loyalty Points</h2>
+            <section aria-label="Loyalty Points" id="loyalty-points">0</section>
+        </section>
+
+        <!-- buttons -->
+        <button type="button" id="book-now">Book Now</button>
+        <button type="button" id="book-adventure">Book Adventure</button>
+        <button type="button" id="check-loyalty">Check Loyalty</button>
+        <button type="button" id="add-to-favorites">Add to Favorites</button>
+
+        <!-- Footer -->
+        <footer>
+            <section aria-label="Footer" class="contain">
+                <section aria-label="Footer" class="footer-row">
+                    <section aria-label="Footer" class="footer-col">
+                        <img src="./logo.png" alt="logo">
+                        <p>No 56/1, Kynsey Road, Colombo 08, Sri Lanka.</p>
+                        <br>
+                        <p>web@citrushotel.com</p>
+                        <br>
+                        <p>	+94 11 5 800 900</p>
+                    </section>
+    
+                    <section class="footer-col">
+                        <h2>Newsletter</h2>
+                        <form action="get">
+                            <input type="text" placeholder="Your Name" class="inputName">
+                            <input type="text" placeholder="Your Email" class="inputEmail">
+                            <input type="submit" value="SUBMIT" class="inputSubmit">
+                        </form>
+                    </section>
+                </section>
+                <section aria-label="Footer" class="footer-row">
+                    <section aria-label="Footer" class="col">
+                        <p> &#169; 2023 Citrus Plc. All Rights Reserved</p>
+                    </section>
+                </section>
+            </section>
+        </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>
